@@ -17,7 +17,7 @@ form.addEventListener("submit", function(event) {
     const fruitToAdd = document.getElementById("fruit-to-add");
     // created li element
     const newLi = document.createElement("li");
-    newLi.innerHTML = fruitToAdd.value + '<button class="delete-btn">x</button></li>'
+    newLi.innerHTML = fruitToAdd.value + '<button class="delete-btn">x</button>' + '<button class="edit-btn">Edit</button>'
     newLi.className = "fruit";
     // Adding li as the last element of unordered list
     fruits.appendChild(newLi);
